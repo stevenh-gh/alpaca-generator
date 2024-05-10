@@ -8,7 +8,7 @@ function App() {
   const [style, setStyle] = useState('');
   const [image, setImage] = useState({
     'accessories': '',
-    'backgrounds': '',
+    'backgrounds': 'blue50',
     'ears': 'default',
     'eyes': 'default',
     'hair': 'default',
@@ -23,6 +23,23 @@ function App() {
       [focus]: style
     })
   }, [style]);
+
+  function getRandom(focus) {
+    return accessories.get(focus)[Math.floor(Math.random() * accessories.get(focus).length)]
+  }
+
+  function randomize() {
+    setImage({
+      'accessories': getRandom('accessories'),
+      'backgrounds': getRandom('backgrounds'),
+      'ears': getRandom('ears'),
+      'eyes': getRandom('eyes'),
+      'hair': getRandom('hair'),
+      'leg': getRandom('leg'),
+      'mouth': getRandom('mouth'),
+      'neck': getRandom('neck'),
+    })
+  }
 
   return (
     <div className='container mx-auto h-screen bg-gray-300'>
@@ -55,6 +72,13 @@ function App() {
                 return <Option key={index} text={value} setStyle={setStyle} isStyle={true} />
               })}
             </div>
+          </div>
+          <div className="m-7 flex gap-3">
+            <button className="bg-blue-400 rounded-lg p-2 text-white hover:bg-blue-500 focus:bg-blue-700"
+              onClick={() => randomize()}>
+              Randomize
+            </button>
+            <button className="bg-blue-400 rounded-lg p-2 text-white hover:bg-blue-500 focus:bg-blue-700">Download</button>
           </div>
         </div>
       </div>
