@@ -63,15 +63,15 @@ function App() {
       <h1 className="uppercase text-3xl text-center p-9">alpaca generator</h1>
       <div className="flex justify-center gap-6">
         <div className="w-96 h-96 relative flex-none" ref={alpacaRef}>
-          <img src={`/public/assets/alpaca/backgrounds/${image['backgrounds']}.png`} alt="" className="absolute" />
-          <img src={`/public/assets/alpaca/accessories/${image['accessories']}.png`} alt="" className="absolute z-40" />
-          <img src={`/public/assets/alpaca/ears/${image['ears']}.png`} alt="" className="absolute" />
-          <img src={`/public/assets/alpaca/eyes/${image['eyes']}.png`} alt="" className="absolute z-50" />
-          <img src={`/public/assets/alpaca/hair/${image['hair']}.png`} alt="" className="absolute" />
-          <img src={`/public/assets/alpaca/leg/${image['leg']}.png`} alt="" className="absolute" />
-          <img src={`/public/assets/alpaca/mouth/${image['mouth']}.png`} alt="" className="absolute z-40" />
-          <img src={`/public/assets/alpaca/neck/${image['neck']}.png`} alt="" className="absolute" />
-          <img src='/public/assets/alpaca/nose.png' alt="" className="absolute" />
+          <img src={`/assets/alpaca/backgrounds/${image['backgrounds']}.png`} alt="" className="absolute" />
+          <img src={`/assets/alpaca/accessories/${image['accessories']}.png`} alt="" className="absolute z-40" />
+          <img src={`/assets/alpaca/ears/${image['ears']}.png`} alt="" className="absolute" />
+          <img src={`/assets/alpaca/eyes/${image['eyes']}.png`} alt="" className="absolute z-50" />
+          <img src={`/assets/alpaca/hair/${image['hair']}.png`} alt="" className="absolute" />
+          <img src={`/assets/alpaca/leg/${image['leg']}.png`} alt="" className="absolute" />
+          <img src={`/assets/alpaca/mouth/${image['mouth']}.png`} alt="" className="absolute z-40" />
+          <img src={`/assets/alpaca/neck/${image['neck']}.png`} alt="" className="absolute" />
+          <img src='/assets/alpaca/nose.png' alt="" className="absolute" />
         </div>
         <div className="flex-none">
           <div>
